@@ -84,12 +84,11 @@ VSocket::~VSocket() {
   *
  **/
 void VSocket::Close(){
-   int st = -1;
-
-   if ( -1 == st ) {
+   if ( -1 == this->sockId ) {
       throw std::runtime_error( "VSocket::Close()" );
    }
-
+      close( this->sockId );
+      this->sockId = -1;
 }
 
 

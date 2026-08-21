@@ -38,6 +38,8 @@ int main() {
    other.sin6_port = htons(PORT); 
    other.sin6_addr = in6addr_any; 
    
+   n = inet_pton(AF_INET6, "::1", &other.sin6_addr );
+
    n = client->sendTo( (void *) hello, strlen( hello ), (void *) & other ); 
    printf("Client: Hello message sent.\n"); 
    
