@@ -44,7 +44,7 @@ int main() {
    other.sin_family = AF_INET; 
    other.sin_port = htons( PORT ); 
     
-   n = inet_pton(AF_INET, "10.1.35.50", &other.sin_addr );
+   n = inet_pton(AF_INET, "127.0.0.1", &other.sin_addr );
    
    if ( 1 != n ) {
       printf( "Error converting from IP address\n" );

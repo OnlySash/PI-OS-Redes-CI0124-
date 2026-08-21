@@ -55,7 +55,7 @@ void VSocket::Init( char t, bool IPv6 ){
       this->sockId = socket(AF_INET, sockType, 0);
    }
 
-   /*Prueba para esperar Recv*/
+   /*Prueba para esperar Recv
    struct timeval tv;tv.tv_sec  = 5;   // 5 segundos de espera máxima
    tv.tv_usec = 0;
    setsockopt(this->sockId, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
@@ -63,7 +63,7 @@ void VSocket::Init( char t, bool IPv6 ){
    if ( -1 == this->sockId ) {
       throw std::runtime_error( "VSocket::Init, (reason)" );
    }
-
+*/
 }
 
 
@@ -81,16 +81,11 @@ VSocket::~VSocket() {
   *
  **/
 void VSocket::Close(){
-   /*if ( -1 == this->sockId ) {
+   if ( -1 == this->sockId ) {
       throw std::runtime_error( "VSocket::Close()" );
    }
       close( this->sockId );
-      this->sockId = -1;*/
-   int st = -1;
-
-   if ( -1 == st ) {
-      throw std::runtime_error( "VSocket::Close()" );
-   }
+      this->sockId = -1;
 }
 
 

@@ -29,7 +29,7 @@ int main() {
    VSocket * server;
    int len, n; 
    int sockfd;
-   struct sockaddr_in other;
+   struct sockaddr other;
    char buffer[MAXLINE]; 
    char *hello = (char *) "Hello 2026-ii from CI0123 server"; 
 	
