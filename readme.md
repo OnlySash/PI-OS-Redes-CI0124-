@@ -19,7 +19,7 @@ Utilice las funcionalidades del Makefile como:
 ## Actividades
 ### Trabajo en Clase
 - [x] Trabajo en Clase 01
-- [ ] Trabajo en Clase 02
+- [x] Trabajo en Clase 02
 - [ ] Trabajo en Clase 03
 - [ ] Trabajo en Clase 04
 - [ ] Trabajo en Clase 05
@@ -45,7 +45,7 @@ Utilice las funcionalidades del Makefile como:
 
 ### Tareas
 - [x] Tarea 01
-- [ ] Tarea 02
+- [x] Tarea 02
 - [ ] Tarea 03
 - [ ] Tarea 04
 - [ ] Tarea 05
