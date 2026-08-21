@@ -18,7 +18,7 @@
 class Socket : public VSocket {
 
    public:
-      Socket( char, bool = false );
+      Socket( char, bool = true );
       ~Socket();
       int Connect( const char *, int );
       int Connect( const char *, const char * );

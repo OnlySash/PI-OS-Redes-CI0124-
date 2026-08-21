@@ -29,7 +29,7 @@ int main() {
    VSocket * server;
    int len, n; 
    int sockfd;
-   struct sockaddr other;
+   struct sockaddr_in other;
    char buffer[MAXLINE]; 
    char *hello = (char *) "Hello 2026-ii from CI0123 server"; 
 	
@@ -38,7 +38,7 @@ int main() {
 
    memset( &other, 0, sizeof( other ) );
 
-   n = server->recvFrom( (void *) buffer, MAXLINE, (void *) &other );	// Mensaje de los www servers
+   n = server->recvFrom( (void *) buffer, MAXLINE-1, (void *) &other );	
    buffer[n] = '\0'; 
    printf("Server: message received: %s\n", buffer);
 

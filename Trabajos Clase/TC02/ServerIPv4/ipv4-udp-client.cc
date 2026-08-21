@@ -19,6 +19,9 @@
 #include <sys/socket.h> 
 #include <arpa/inet.h> 
 #include <netinet/in.h>
+#include <iostream>
+#include <stdexcept>
+#include <unistd.h>
 
 #include "VSocket.h"
 #include "Socket.h"
@@ -34,13 +37,15 @@ int main() {
    char *hello = (char *) "Hello 2026-ii from CI0123 client"; 
    struct sockaddr_in other;
 
-   client = new Socket( 'd' );	// Creates an UDP socket: datagram
+   client = new Socket('d');	// Creates an UDP socket: datagram
 
-   memset( &other, 0, sizeof( other ) ); 
+   memset(&other,0, sizeof(other)); 
    
    other.sin_family = AF_INET; 
    other.sin_port = htons( PORT ); 
-   n = inet_pton( AF_INET, "10.1.35.50", &other.sin_addr );	// IP address to test our client with a Python server on lab 3-5
+    
+   n = inet_pton(AF_INET, "10.1.35.50", &other.sin_addr );
+   
    if ( 1 != n ) {
       printf( "Error converting from IP address\n" );
       exit( 23 );
@@ -52,7 +57,7 @@ int main() {
    n = client->recvFrom( (void *) buffer, MAXLINE, (void *) & other );
    buffer[n] = '\0'; 
    printf("Client message received: %s\n", buffer); 
-
+   
    client->Close(); 
 
    return 0;
