@@ -1,0 +1,10 @@
+granos:arroz:50:1000
+granos:frijoles:50:800
+granos:lentejas:50:600
+granos:garbanzos:50:600
+granos:arvejas:50:600
+granos:azucar:50:800
+granos:harina de trigo:50:1000
+granos:harina de maíz:50:1000
+granos:maicena:50:1000
+

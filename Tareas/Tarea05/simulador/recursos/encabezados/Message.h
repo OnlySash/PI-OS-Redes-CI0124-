@@ -21,7 +21,6 @@
 enum class Reason {
   ConsultProduct,
   ListCategory,
-  ListProducts,
   Success,
   Error,
   End

@@ -23,13 +23,13 @@
 #include <cstring>
 #include <thread>
 #include <atomic>
-
+#include <sstream>
 
 // Clase Intermediario
 class Intermediary {
  public:
   // Método constructor de la clase Intermediario
-  Intermediary(Queue &, Queue &, Queue &, Queue &);
+  Intermediary(Queue &, Queue &, Queue &, Queue &, Bitacora &);
   // Método destructor de la clase Intermediario
   ~Intermediary();
   // Método que permite iniciar el hilo del intermediario
@@ -53,9 +53,6 @@ class Intermediary {
   // Cola en la que se encuentran las solicitudes del cliente
   Queue &queueFromClient;
   Bitacora &bitacora;
-
-  void Intermediary::start();
-  void Intermediary::stop();
 
   // Método que ejecuta el hilo del intermediario
   void execute();

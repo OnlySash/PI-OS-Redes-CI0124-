@@ -1,14 +1,12 @@
 #include "Intermediary.h"
  
-Intermediary::Intermediary(Queue &queueToServer, Queue &queueFromServer, Bitacora &bitacora) :
+Intermediary::Intermediary(Queue &queueToServer, Queue &queueFromServer, Queue &queueToClient, Queue &queueFromClient, Bitacora &bitacora) :
     queueToServer(queueToServer),
     queueFromServer(queueFromServer),
     queueToClient(queueToClient),
-    queueFromClient(queueFromClient), 
-    bitacora(bitacora) { 
-
-  this->status = Status::Waiting;
-    }
+    queueFromClient(queueFromClient),
+    bitacora(bitacora),
+    status(Status::Waiting) { }
 
 Intermediary::~Intermediary() {}
 
@@ -21,9 +19,9 @@ void Intermediary::start() {
 void Intermediary::stop() {
   Message end;
   // Se declara la operación "FIN"
-  end.idClient = END;
+  end.idClient = -1;
   // Se indica el motivo
-  end.reason = Reason::end;
+  end.reason = Reason::End;
   // Se copia el contenido indicando el final
   strcpy(end.content, "TERMINAR");
   // Se ingresa el mensaje en la cola
@@ -45,7 +43,7 @@ Message Intermediary::processRequest(const Message& request) {
   if (request.reason != Reason::Error) { 
     // Inicializa los atributos correspondientes
     answer.idClient = request.idClient;
-    answer.reason = Reason::success;
+    answer.reason = Reason::Success;
     // Guarda el contenido original en una variable local
     std::string original = request.content;    
     // Se inicializa un nuevo string para crear un nuevo contenido

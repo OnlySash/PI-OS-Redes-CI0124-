@@ -1,0 +1,50 @@
+granos:arroz:50:1000
+granos:frijoles:50:800
+granos:lentejas:50:600
+granos:garbanzos:50:600
+granos:arvejas:50:600
+granos:azucar:50:800
+granos:harina de trigo:50:1000
+granos:harina de maíz:50:1000
+granos:maicena:50:1000
+condimentos:aceite vegetal:25:1000
+condimentos:aceite de oliva:25:1000
+condimentos:vinagre blanco:25:500
+condimentos:vinagre de manzana:25:800
+condimentos:salsa de soya:25:1000
+condimentos:salsa inglesa:25:800
+condimentos:mayonesa:25:800
+condimentos:ketchup:25:800
+condimentos:mostaza:25:800
+condimentos:aderezo:25:1000
+condimentos:consome:25:200
+condimentos:pimienta:25:200
+condimentos:sal:25:200
+pastas:espaguetti:25:600
+pastas:macarrones:25:600
+pastas:fideos:25:600
+pastas:lasaña:25:600
+pastas:maruchan:25:600
+pastas:fideos magi:25:600
+enlatados:atun:25:1000
+enlatados:sardinas:25:1000
+enlatados:maiz dulce:25:500
+enlatados:vegetales:25:500
+enlatados:frutas:25:500
+enlatados:frijoles:25:500
+enlatados:palmito:25:500
+enlatados:garbanzos:25:500
+bebidaspolvo:cafe molido:25:2000
+bebidaspolvo:cafe instantaneo:25:2000
+bebidaspolvo:cafe en grano:25:2000
+bebidaspolvo:te:25:1000
+bebidaspolvo:infusion:25:2000
+bebidaspolvo:chocolate:25:1000
+bebidaspolvo:pinito:25:1000
+bebidaspolvo:tang:25:200
+bebidas:agua:25:1000
+bebidas:gaseosa:25:1000
+bebidas:jugo:25:500
+bebidas:nectar:25:500
+bebidas:electrolitos:25:1000
+bebidas:energizante:25:1000
