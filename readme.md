@@ -24,11 +24,11 @@ Utilice las funcionalidades del Makefile como:
 - [x] Trabajo en Clase 04
 - [x] Trabajo en Clase 05
 - [x] Trabajo en Clase 06
-- [ ] Trabajo en Clase 07
-- [ ] Trabajo en Clase 08
-- [ ] Trabajo en Clase 09
-- [ ] Trabajo en Clase 10
-- [ ] Trabajo en Clase 11
+- [x] Trabajo en Clase 07
+- ~~[ ] Trabajo en Clase 08~~
+- ~~[ ] Trabajo en Clase 09~~
+- [x] Trabajo en Clase 10
+- [x] Trabajo en Clase 11
 - [ ] Trabajo en Clase 12
 - [ ] Trabajo en Clase 13
 - [ ] Trabajo en Clase 14
@@ -50,11 +50,11 @@ Utilice las funcionalidades del Makefile como:
 - [x] Tarea 04
 - [x] Tarea 05
 - [x] Tarea 06
-- [ ] Tarea 07
-- [ ] Tarea 08
-- [ ] Tarea 09
-- [ ] Tarea 10
-- [ ] Tarea 11
+- ~~[ ] Tarea 07~~
+- ~~[ ] Tarea 08~~
+- ~~[ ] Tarea 09~~
+- [x] Tarea 10
+- [x] Tarea 11
 - [ ] Tarea 12
 - [ ] Tarea 13
 - [ ] Tarea 14

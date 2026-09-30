@@ -1,0 +1,35 @@
+# Cliente
+
+Programa cliente de la tienda, Se conecta al
+servidor de productos por HTTP: consulta categorías, permite armar un
+carrito de compras y al finalizar envía la proforma al servidor.
+
+## Compilar
+
+```bash
+make
+```
+Genera el binario `cliente`.
+
+## Ejecutar
+
+```bash
+./cliente <IP-del-servidor> <puerto>
+```
+
+Ejemplo:
+
+```bash
+./cliente 10.84.166.62 8080
+```
+
+## Cómo funciona
+
+1. Pide al servidor la lista de categorías disponibles (`GET /TicAmazon/list.php`).
+2. El usuario elige una categoría por índice.
+3. El cliente pide los productos de esa categoría (`GET /TicAmazon/list.php?category=X`).
+4. El usuario elige un producto y una cantidad, y se agrega al carrito.
+5. Se puede repetir el proceso con otra categoría, o terminar la compra.
+6. Al terminar, se muestra la factura en pantalla y se envía la proforma
+   al servidor (`POST /TicAmazon/proforma.php`), que responde si el pedido
+   es válido según las existencias reales.
